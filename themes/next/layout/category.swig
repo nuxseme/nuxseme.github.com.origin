@@ -10,7 +10,6 @@
     <div class="collection-title">
       <h2 >
         {{ page.category }}
-        <small>{{  __('title.category')  }}</small>
       </h2>
     </div>
 

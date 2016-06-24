@@ -28,9 +28,6 @@
       </div>
     {% elif page.type === 'categories' %}
       <div class="category-all-page">
-        <div class="category-all-title">
-            {{ _p('counter.categories', site.categories.length) }}
-        </div>
         <div class="category-all">
           {{ list_categories() }}
         </div>
