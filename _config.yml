@@ -71,7 +71,7 @@ deploy:
   type: git
   repo: git@github.com:nuxseme/nuxseme.github.com.git
   branch: master
-  message: "update"
+  #message: "update"
 
 # 自定义 新增配置
 #多说站点配置
