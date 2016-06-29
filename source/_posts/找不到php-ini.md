@@ -2,7 +2,7 @@
 title: 找不到php.ini
 categories:
   - PHP
-date: 2016-06-28 23:02:58
+date: 2016-06-29 23:07:28
 ---
 ### 问题描述
 在指定的文件目录下已经存在php.ini 重启了php-fpm依然无法加载php.ini

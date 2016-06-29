@@ -2,8 +2,9 @@
 title: mongodb启动报错
 categories:
   - MongoDB
-date:
+date: 2016-06-29 23:24:51
 ---
+
 
 ### 报错信息
 >child process failed, exited with error number 100
