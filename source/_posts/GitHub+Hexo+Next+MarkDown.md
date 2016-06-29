@@ -46,7 +46,7 @@ date: 2016-06-25 10:28:21
 	
 	$npm install
 	$hexo s
-	
+	$hexo s --draft #预览草稿
 对应提示差什么包安装即可.出现Cannot Get / ，hexo server 也启动成功，很可能是没有执行npm install
 
 ##### 3 hexo 指令简介
