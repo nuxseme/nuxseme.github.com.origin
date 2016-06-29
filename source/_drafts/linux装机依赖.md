@@ -9,3 +9,9 @@ date:
 ```
 yum -y install pcre-devel openssl openssl-devel
 ```
+
+### win上传下载
+
+```
+yum -y install lszrz
+```
