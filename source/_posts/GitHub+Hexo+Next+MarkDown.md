@@ -1,5 +1,7 @@
 ---
 title: GitHub+Hexo+Next+MarkDown
+categories:
+  - Hexo
 date: 2016-06-25 10:28:21
 ---
 #### 导语
@@ -86,7 +88,7 @@ date: 2016-06-25 10:28:21
 
 ##### more:
   
-> [我的主题](http://www.nuxse.com)------[源码](https://github.com/nuxseme/nuxseme.github.com.origin)  
+> [我的主题](http://www.nuxseme.com)------[源码](https://github.com/nuxseme/nuxseme.github.com.origin)  
 [HEXO+Github,搭建属于自己的博客](http://www.jianshu.com/p/465830080ea9)  
 [Hexo 靜態博客使用指南](http://www.jianshu.com/p/73779eacb494)  
 
