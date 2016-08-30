@@ -1,5 +1,7 @@
 ---
 title: GitHub+Hexo+Next+MarkDown
+categories:
+  - Hexo
 date: 2016-06-25 10:28:21
 ---
 #### 导语
@@ -52,10 +54,15 @@ date: 2016-06-25 10:28:21
 ##### 3 hexo 指令简介
 
 	$hexo -h #最有用 没有之一
-	$hexo s #本地预览 默认端口4000  端口被占用可选择关闭端口或者选择其他端口 hexo s -p 6666
-	如果出现样式不对 没有加载可以尝试强制刷新或者重启服务  
+	$hexo s #本地预览 默认端口4000  端口被占用可选择关闭端口或者选择其他端口 hexo s -p 6666 
+	如果出现样式不对 没有加载可以尝试强制刷新或者重启服务
+	$hexo s --drafts #将草稿加入本地预览	  
 	$hexo g #根据source生成public 在github上的代码就是public中的文件
 	$hexo d #部署 部署是根据项目配置文件中的
+	$hexo clean #删除生成的public文件
+	$hexo new title #在_post下新建文件，不需要加后缀
+	$hexo new _draft title #在_drafts下新建草稿
+
 	
 	deploy: #通常采用ssh-key模式 不需要再次输入账户密码
 		type: git
@@ -86,7 +93,7 @@ date: 2016-06-25 10:28:21
 
 ##### more:
   
-> [我的主题](http://www.nuxse.com)------[源码](https://github.com/nuxseme/nuxseme.github.com.origin)  
+> [我的主题](http://www.nuxseme.com)------[源码](https://github.com/nuxseme/nuxseme.github.com.origin)  
 [HEXO+Github,搭建属于自己的博客](http://www.jianshu.com/p/465830080ea9)  
 [Hexo 靜態博客使用指南](http://www.jianshu.com/p/73779eacb494)  
 
