@@ -62,7 +62,7 @@ date: 2016-06-25 10:28:21
 	$hexo clean #删除生成的public文件
 	$hexo new title #在_post下新建文件，不需要加后缀
 	$hexo new _draft title #在_drafts下新建草稿
-
+	$hexo publish title #将draft发布
 	
 	deploy: #通常采用ssh-key模式 不需要再次输入账户密码
 		type: git
