@@ -1,9 +1,11 @@
----
+layout: apache编译安装
 title: mongodb综合
 categories:
   - MongoDB
-date: 2016年9月22日19:33:43
+date: 2016-09-24 14:37:14
+tags:
 ---
+
 
 ### MongoDB 综合
 

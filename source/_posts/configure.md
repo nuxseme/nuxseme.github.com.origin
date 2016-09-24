@@ -2,10 +2,9 @@
 title: configure
 categories:
   - null
-date:
+date: 2016-09-24 14:23:52
 ---
 
-#### configure总结
 
 >配置(configure)  
 编译(make)  

@@ -1,7 +1,7 @@
 ---
 title: Yii-sa-路由美化
 categories:
-  - null
+  - Yii
 date: 2016-08-30 11:41:00
 ---
 
@@ -30,3 +30,7 @@ date: 2016-08-30 11:41:00
             'rules' => [
             ],
         ],
+
+3 访问格式
+example.com/controller/action-action  => Controller/actionActionAction  
+中间用'-'隔开,控制器的action使用驼峰表示法

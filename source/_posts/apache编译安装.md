@@ -1,9 +1,10 @@
 ---
 title: apache编译安装
 categories:
-  - Apache
-date:
+  - null
+date: 2016-09-24 14:38:22
 ---
+
 
 ### 安装 apr
 
