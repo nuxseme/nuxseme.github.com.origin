@@ -1,9 +1,9 @@
 ---
 title: mac快捷键
 categories:
-  - null
-date:
+  - XOS
 ---
+
 	Command+M: 最小化窗口
 	Command+T: 在浏览器中打开新的选项卡
 	Command+W: 关闭窗口

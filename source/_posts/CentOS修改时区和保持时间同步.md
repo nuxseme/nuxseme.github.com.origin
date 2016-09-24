@@ -1,14 +1,18 @@
 ---
 title: CentOS修改时区和保持时间同步
 categories:
-  - Linux
-date:
+  - null
+date: 2016-09-24 14:15:03
 ---
+
 
 ### 修改时区
 
-	cp -y /usr/share/zoneinfo/xxx|xxx  /usr/localtime  
-	#复制选择的时区到/usr/localtime 下覆盖
+	cp -y /usr/share/zoneinfo/xxx|xxx  /etc/localtime
+	#复制选择的时区到/etc/localtime 下覆盖
+
+	//或者建立软连接
+	ls -n /usr/share/zoneinfo/xxxx  /etc/localtime
 	
 ### 更新时间
 

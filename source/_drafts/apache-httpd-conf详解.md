@@ -1,5 +1,5 @@
 ---
-title: php错误处理
+title: apache.httpd.conf详解
 categories:
   - null
 date:

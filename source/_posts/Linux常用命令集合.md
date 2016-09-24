@@ -1,13 +1,13 @@
 ---
 title: Linux常用命令集合
 categories:
-  - Linux
-date:
+  - null
+date: 2016-09-24 14:35:26
 ---
+
 
 	apropos desc
 	*apropos 命令反查
-
 
 	whatis command
 	whatis 简介命令whereis filename
@@ -18,7 +18,7 @@ date:
 
 	find [dir|默认当前文件夹] -name filename
 	find 在指定文件目录中查找文件
-
+<!--more-->
 	mkdir -p dir/dir 递归创建文件夹
 
 	>  输出重定向 建立 覆盖
@@ -32,3 +32,11 @@ date:
 
 	df  disk free 显示磁盘使用情况
 	du  disk usage 磁盘用量 -sh  摘要
+
+	//关闭服务
+	ps aux|grep comand|grep -v grep |awk '{print $args}' |xargs kill -(9|2)
+
+	ls -n  建立软连接
+
+	tar -czf  example.tar  example  
+	tar -zxvf example.tar
