@@ -52,7 +52,16 @@ cp init.d.php-fpm /etc/init.d/php-fpm  //serveice php-fpm start
 cp php-fpm.conf.default php-fpm.conf
 cp www.conf.default www.conf
 ```
-
+### 附php常用指令 
+ 
+```
+php --ri extension_name #查看扩展详情
+PHP -i # 显示phpinfo() 配合grep 可以查看对应的参数
+php -r "php"; # 执行简单的php语句
+php -v # 显示php版本
+php -m # 查看扩展
+PHP --ini # 查看php.ini路径
+``` 
 
 
 
