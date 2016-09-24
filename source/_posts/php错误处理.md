@@ -1,7 +1,7 @@
 ---
 title: php错误处理
 categories:
-  - null
+  - PHP
 date: 2016-09-24 14:10:31
 ---
 

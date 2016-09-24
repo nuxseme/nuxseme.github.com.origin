@@ -34,7 +34,7 @@ date: 2016-09-24 14:35:26
 	du  disk usage 磁盘用量 -sh  摘要
 
 	//关闭服务
-	ps aux|grep comand|grep -v grep |awk "{print $args}" |xargs kill -(9|2)
+	ps aux|grep comand|grep -v grep |awk '{print $args}' |xargs kill -(9|2)
 
 	ls -n  建立软连接
 
