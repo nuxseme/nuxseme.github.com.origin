@@ -1,2 +1,2 @@
 # nuxseme.github.com.origin
-# [nuxseme.com](http://nuxseme.com)
+# [nuxseme.com](http://nuxseme.com){:target="_blank"}
