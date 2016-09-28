@@ -35,6 +35,12 @@ categories:
 	  - npm install #安装npm 包管理
 	  - npm install hexo-cli -g #安装hexo
 
+	notifications:
+	  email:
+	    - nuxseme@gmail.com
+	  on_success: always
+	  on_failure: always
+	  
 	script:
 	  - hexo -v #查看版本信息确认是否安装成功
 	  - hexo clean # 清除public文件
