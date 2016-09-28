@@ -33,9 +33,7 @@ date: 2016-06-25 10:28:21
 ##### 2 hexo 安装
 	
 	$sudo npm install -g hexo-cli
-	$sudo npm install hexo
-	$sudo nam install hexo-server
-	$sudo nam install hexo-git
+	$sudo npm install hexo-server
 这里通常会出错，对应错误google即可，建议加上sudo，可能会出现目录权限不够
 
 	$hexo init #进入自定义的项目目录之后，hexo init会初始化 并clone git上的默认主题
