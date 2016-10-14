@@ -24,32 +24,21 @@ make && make install
 ### 安装依赖
 
 ```
-yum -y install libxml2 libxml2-devel libcurl.x86_64 libcurl-devel.x86_64
-libjpeg.x86_64 libpng.x86_64 freetype.x86_64  libpng-devel.x86_64 
-freetype-devel.x86_64 openssl.x86_64 openssl-devel.x86_64 bzip2-devel.x86_64 
-libjpeg-devel  libpng libXpm-devel libxslt libxslt-devel
+yum -y install libxml2 libxml2-devel libcurl.x86_64 libcurl-devel.x86_64 libjpeg.x86_64 libpng.x86_64 freetype.x86_64  libpng-devel.x86_64 freetype-devel.x86_64 openssl.x86_64 openssl-devel.x86_64 bzip2-devel.x86_64 libjpeg-devel libpng libXpm-devel libxslt libxslt-devel
 ```
 ### configure  
 注意--prefix（这里设为/opt/software/php7 到后面无法加载php.ini 见[找不到php.ini](/PHP/找不到php-ini/)）
 
 ```
-./configure    --prefix=/opt/software/php   --with-curl   --with-freetype-dir  
- --with-gd   --with-gettext   --with-iconv-dir   --with-kerberos   
- --with-libdir=lib64   --with-libxml-dir   --with-mysqli   --with-openssl  
-  --with-pcre-regex   --with-pdo-mysql   --with-pdo-sqlite   --with-pear   
-  --with-png-dir   --with-xmlrpc   --with-xsl   --with-zlib   --enable-fpm  
-   --enable-bcmath   --enable-libxml   --enable-inline-optimization   
-   --enable-gd-native-ttf   --enable-mbregex   --enable-mbstring   
-   --enable-opcache   --enable-pcntl   --enable-shmop   --enable-soap   
-   --enable-sockets   --enable-sysvsem   --enable-xml   --enable-zip
+./configure    --prefix=/opt/software/php   --with-curl   --with-freetype-dir  --with-gd   --with-gettext   --with-iconv-dir   --with-kerberos   --with-libdir=lib64   --with-libxml-dir   --with-mysqli   --with-openssl  --with-pcre-regex   --with-pdo-mysql   --with-pdo-sqlite   --with-pear   --with-png-dir   --with-xmlrpc   --with-xsl   --with-zlib   --enable-fpm  --enable-bcmath   --enable-libxml   --enable-inline-optimization   --enable-gd-native-ttf   --enable-mbregex   --enable-mbstring   --enable-opcache   --enable-pcntl   --enable-shmop   --enable-soap  --enable-sockets   --enable-sysvsem   --enable-xml   --enable-zip
 make && make install
 ```
 ### 配置修改
 
 ```
 cp /opt/download/php-7.0.8/php.ini-development /opt/software/php/lib/php.ini
-cp init.d.php-fpm /etc/init.d/php-fpm  //serveice php-fpm start
-cp php-fpm.conf.default php-fpm.conf
+cp /opt/download/php-7.0.8/sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm  //serveice php-fpm start
+cp/php-fpm.conf.default php-fpm.conf
 cp www.conf.default www.conf
 ```
 ### 附php常用指令 
