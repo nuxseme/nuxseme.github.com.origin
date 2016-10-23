@@ -14,3 +14,6 @@ yum -y install pcre-devel openssl openssl-devel
 ```
 yum -y install lszrz
 ```
+    yum -y install wget
+
+#w3m
