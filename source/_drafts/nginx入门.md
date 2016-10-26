@@ -2,7 +2,6 @@
 title: nginx入门
 categories:
   - Nginx
-  date: 2016年10月14日19:20:10
 ---
 root  
 alias  
