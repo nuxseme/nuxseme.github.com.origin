@@ -1,11 +1,10 @@
 ---
 title: Yii-sa-路由解析
 categories:
-  - null
-date: 2016-10-27 01:04:19
+  - Yii
 ---
 
-> 简单追寻了Yii2 从接受请求到响应sg
+> 简单追寻了Yii2 从接受请求到响应
 
 
 	1.web/index.php
