@@ -1,8 +1,7 @@
 ---
 title: composer
 categories:
-  - null
-date: 2016-10-25 00:53:39
+  - composer
 ---
 
 
@@ -77,6 +76,8 @@ date: 2016-10-25 00:53:39
         {
             "packagist": false #禁止显示packagelist
         }
+       #注意： 顺序是非常重要的，当 Composer 查找资源包时，它会按照顺序进行。默认情况下 Packagist 是最后加入的，因此自定义设置将可以覆盖 Packagist 上的包。
+ 
     ],
     "require": {
     		#对应包名称 
