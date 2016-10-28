@@ -15,6 +15,7 @@ categories:
 2 你的github项目中包含正确配置的.travis.yml文件
 3 在travis.org中，将你的github项目同步过去，并开启配置
 
+<!--more-->
 ### 技巧和坑
 
 > 1 GH\_TOKEN  
