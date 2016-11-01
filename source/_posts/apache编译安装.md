@@ -1,7 +1,7 @@
 ---
 title: apache编译安装
 categories:
-  - null
+  - apache
 date: 2016-09-24 14:38:22
 ---
 

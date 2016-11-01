@@ -1,8 +1,8 @@
 ---
 title: GitHub+Hexo+Next+MarkDown
-categories:
-  - Hexo
 date: 2016-06-25 10:28:21
+categories:
+  - hexo
 ---
 #### 导语
 ***

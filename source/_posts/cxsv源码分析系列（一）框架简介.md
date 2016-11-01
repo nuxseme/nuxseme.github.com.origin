@@ -2,7 +2,7 @@
 title: cxsv源码分析系列(一)框架简介
 date: 2016-06-25 22:49:20
 categories: 
-- cxsv源码分析
+- cxsv
 ---
 ### 概述
 cxsv框架跟大多的mvc框架有许多共同点,模块化,库类,单入口.解析动态网页的流程也大致相同[url请求->url解析->Action+Function->渲染->输出]除此之外，cxsv废弃了nginx|apache 采用php扩展[swoole](http://swoole.com)作为http服务器，利用了许多swoole特性，定时器，钩子，任务投递，多进程等特性。该框架配合mongodb,redis,ngnix可以很方便的实现挂件系统，消息队列,日志系统等诸多功能.框架还在进一步完善中。

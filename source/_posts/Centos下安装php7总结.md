@@ -1,7 +1,7 @@
 ---
 title: Centos下安装php7总结
 categories:
-  - PHP
+  - php
 date: 2016-06-29 23:06:58
 ---
 ### 简介

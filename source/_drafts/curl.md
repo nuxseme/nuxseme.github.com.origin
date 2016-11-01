@@ -1,6 +1,5 @@
 ---
 title: curl
 categories:
-  - null
-date:
+  - php
 ---

@@ -1,7 +1,7 @@
 ---
 title: Content-Type
 categories:
-  - PHP
+  - php
 date: 2016-08-29 15:54:32
 ---
 

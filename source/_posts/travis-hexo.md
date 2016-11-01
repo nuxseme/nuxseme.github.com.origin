@@ -1,7 +1,8 @@
 ---
 title: travis-hexo
+date: 2016-11-1 11:28:18
 categories:
-  - Hexo
+  - ci
 ---
 
 ### 持续集成

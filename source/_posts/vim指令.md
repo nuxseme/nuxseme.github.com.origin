@@ -1,8 +1,8 @@
 ---
 title: vim
-categories:
-  - null
 date: 2016-09-24 14:50:25
+categories:
+  - linux
 ---
 
 	set nu|number|nonumber|nonu 是否开齐行号

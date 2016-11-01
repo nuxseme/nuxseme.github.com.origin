@@ -1,8 +1,8 @@
 ---
 title: Yii-sa-路由美化
-categories:
-  - Yii
 date: 2016-08-30 11:41:00
+categories:
+  - yii
 ---
 
 

@@ -1,8 +1,8 @@
 ---
 title: Linux常用命令集合
-categories:
-  - null
 date: 2016-09-24 14:35:26
+categories:
+  - linux
 ---
 
 

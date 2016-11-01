@@ -1,8 +1,8 @@
 ---
 title: docker
-categories:
-  - null
 date: 2016-10-26 00:39:52
+categories:
+  - docker
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: cookie
 categories:
-  - null
+  - web
 date: 2016-09-24 14:11:24
 ---
 

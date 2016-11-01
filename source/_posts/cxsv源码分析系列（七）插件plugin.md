@@ -2,7 +2,7 @@
 title: cxsv源码分析系列（七）插件plugin
 date: 2016-06-28 18:57:32
 categories: 
-- cxsv源码分析
+- cxsv
 ---
 
 ### 概述

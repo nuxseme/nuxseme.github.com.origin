@@ -1,8 +1,8 @@
 ---
 title: mongodb启动报错
-categories:
-  - MongoDB
 date: 2016-06-29 23:24:51
+categories:
+  - mongodb
 ---
 
 

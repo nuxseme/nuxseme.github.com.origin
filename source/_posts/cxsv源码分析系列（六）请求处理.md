@@ -2,7 +2,7 @@
 title: cxsv源码分析系列（六）请求处理
 date: 2016-06-27 23:53:19
 categories: 
-- cxsv源码分析
+- cxsv
 ---
 ### 概述
 >从客户端发起请求到应用服务器响应返回数据整个过程在AppServer和HttpServer已经提到过，这里完整系统的梳理下

@@ -1,8 +1,8 @@
 ---
 title: php动态添加扩展
-categories:
-  - PHP
 date: 2016-09-20 22:27:43
+categories:
+  - php
 ---
 
 

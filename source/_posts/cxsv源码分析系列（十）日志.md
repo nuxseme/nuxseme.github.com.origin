@@ -1,7 +1,7 @@
 ---
 title: cxsv源码分析系列（十）日志
 categories:
-  - cxsv源码分析
+  - cxsv
 date: 2016-06-29 20:42:04
 ---
 ### 概述

@@ -1,7 +1,7 @@
 ---
 title: configure
 categories:
-  - null
+  - linux
 date: 2016-09-24 14:23:52
 ---
 

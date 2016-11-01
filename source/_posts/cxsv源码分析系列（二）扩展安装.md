@@ -2,7 +2,7 @@
 title: cxsv源码分析系列（二）扩展安装
 date: 2016-06-26 00:59:41
 categories: 
-- cxsv源码分析
+- cxsv
 ---
 ### Notic
 以下安装仅仅作为示例，具体安装版本以实际情况为准，./configure的配置参数参看./configure --help，配置文件路径以实际为准。

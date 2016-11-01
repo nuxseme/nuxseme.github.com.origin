@@ -1,7 +1,7 @@
 ---
 title: CentOS修改时区和保持时间同步
 categories:
-  - null
+  - centos
 date: 2016-09-24 14:15:03
 ---
 

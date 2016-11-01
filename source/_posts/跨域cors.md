@@ -2,7 +2,7 @@
 title: 跨域cors
 date: 2016-9-24 14:09:49
 categories:
-  - Web
+  - web
 ---
 
 ### 什么叫跨域
