@@ -84,8 +84,7 @@ categories:
 > 这里面存放的是css部分的东西，修改样式通常在这里修改即可  
 
 
-
-主题个性化配置讲的不详细，大家可以到[官方的说明文档](http://theme-next.iissnan.com)查看.
+[官方的说明文档](http://theme-next.iissnan.com)查看.
 
 ***
 
