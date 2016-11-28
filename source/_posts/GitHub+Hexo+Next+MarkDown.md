@@ -59,7 +59,7 @@ categories:
 	$hexo d #部署 部署是根据项目配置文件中的
 	$hexo clean #删除生成的public文件
 	$hexo new title #在_post下新建文件，不需要加后缀
-	$hexo new _draft title #在_drafts下新建草稿
+	$hexo new draft title #在_drafts下新建草稿
 	$hexo publish title #将draft发布
 	
 	deploy: #通常采用ssh-key模式 不需要再次输入账户密码
