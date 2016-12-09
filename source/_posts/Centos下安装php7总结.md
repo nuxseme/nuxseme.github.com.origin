@@ -29,10 +29,13 @@ yum -y install libxml2 libxml2-devel libcurl.x86_64 libcurl-devel.x86_64 libjpeg
 ### configure  
 注意--prefix（这里设为/opt/software/php7 到后面无法加载php.ini 见[找不到php.ini](/PHP/找不到php-ini/)）
 
-```
-./configure    --prefix=/opt/software/php   --with-curl   --with-freetype-dir  --with-gd   --with-gettext   --with-iconv-dir   --with-kerberos   --with-libdir=lib64   --with-libxml-dir   --with-mysqli   --with-openssl  --with-pcre-regex   --with-pdo-mysql   --with-pdo-sqlite   --with-pear   --with-png-dir   --with-xmlrpc   --with-xsl   --with-zlib   --enable-fpm  --enable-bcmath   --enable-libxml   --enable-inline-optimization   --enable-gd-native-ttf   --enable-mbregex   --enable-mbstring   --enable-opcache   --enable-pcntl   --enable-shmop   --enable-soap  --enable-sockets   --enable-sysvsem   --enable-xml   --enable-zip
-make && make install
-```
+
+	./configure    --prefix=/opt/software/php   --with-curl   --with-freetype-dir  --with-gd   --with-gettext   --with-iconv-dir   --with-kerberos   --with-libdir=lib64   --with-libxml-dir   --with-mysqli   --with-openssl  --with-pcre-regex   --with-pdo-mysql   --with-pdo-sqlite   --with-pear   --with-png-dir   --with-xmlrpc   --with-xsl   --with-zlib   --enable-fpm  --enable-bcmath   --enable-libxml   --enable-inline-optimization   --enable-gd-native-ttf   --enable-mbregex   --enable-mbstring   --enable-opcache   --enable-pcntl   --enable-shmop   --enable-soap  --enable-sockets   --enable-sysvsem   --enable-xml   --enable-zip
+	make && make install
+	
+	#出现Cannot allocate memory 可以添加--disable-fileinfo
+
+
 ### 配置修改
 
 ```
@@ -45,7 +48,7 @@ cp www.conf.default www.conf
  
 ```
 php --ri extension_name #查看扩展详情
-PHP -i # 显示phpinfo() 配合grep 可以查看对应的参数
+PHP -i # 显示phpinfo() 配合grep 可以查看对应的参数 如：php -i|grep configure
 php -r "php"; # 执行简单的php语句
 php -v # 显示php版本
 php -m # 查看扩展
