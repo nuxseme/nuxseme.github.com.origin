@@ -1,7 +1,7 @@
 ---
 title: mac快捷键
 categories:
-  - XOS
+  - xos
 ---
 
 	Command+M: 最小化窗口

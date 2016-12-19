@@ -1,7 +1,7 @@
 ---
 title: nginx+lua+graphicsmagick实时生成缩略图
 date: 2016-11-28 15:14:55
-categories: PHP
+categories: php
 ---
 
 安装
