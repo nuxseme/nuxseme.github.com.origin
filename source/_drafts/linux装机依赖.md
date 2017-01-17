@@ -1,7 +1,7 @@
 ---
 title: linux装机依赖
 categories:
-  - Linux
+  - linux
 ---
 
 ### nginx 依赖

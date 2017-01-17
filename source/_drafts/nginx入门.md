@@ -1,7 +1,7 @@
 ---
 title: nginx入门
 categories:
-  - Nginx
+  - nginx
 ---
 root  
 alias  
