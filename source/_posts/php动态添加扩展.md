@@ -15,7 +15,8 @@ categories:
 	$cd mongo-php-driver
 	$phpize
 	$./configure --with-php-config=/path/php5/bin/php-config
-	
+	$make && make install
+
 > 编译完成之后会在指定的php扩展目录下会包含mongo.so
 > 修改php.ini文件 echo "extension=mongo.so">>php.ini
 
