@@ -25,7 +25,7 @@ date: 2017-03-01 16:06:07
         expires max;
 	}
 
-<--more-->
+<!--more-->
 	
 	Request URL:http://cache.com/BBC-02.jpg
 	Request Method:GET
