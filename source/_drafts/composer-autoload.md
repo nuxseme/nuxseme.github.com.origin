@@ -1,9 +1,8 @@
 ---
 title: composer autoload
-categories: php
 date: 2017-03-02 00:05:52
+categories: php
 ---
-
 
 > 在引用各种组件时，常常只知道composer require  xxx/xxx，就能使用第三方库的类。对于vender下是如何包含我们需要的类了解不清。
 > vender/composer 文件夹怎么来的？有什么作用？具体流程怎么处理的？
@@ -44,8 +43,11 @@ date: 2017-03-02 00:05:52
     	{
         if (null !== self::$loader) {
             return self::$loader;
+       
+
     	}
-           spl_autoload_register(array('ComposerAutoloaderInite126e603acf96df70971f26ca865db57', 'loadClassLoader'), true, true);
+       
+        spl_autoload_register(array('ComposerAutoloaderInite126e603acf96df70971f26ca865db57', 'loadClassLoader'), true, true);
         self::$loader = $loader = new \Composer\Autoload\ClassLoader();
         spl_autoload_unregister(array('ComposerAutoloaderInite126e603acf96df70971f26ca865db57', 'loadClassLoader'));
 		//上main就是为了 new \Composer\Autoload\ClassLoader()的时候自动包含文件
