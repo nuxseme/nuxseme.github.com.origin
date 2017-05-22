@@ -5,7 +5,7 @@ date: 2017-03-28 10:57:51
 ---
 
 
-###vhost 
+### vhost 
 
 	upstream loadbalance{  
 	#设定负载均衡配置名称
@@ -38,7 +38,7 @@ date: 2017-03-28 10:57:51
 		}
 	}
 
-###测试结果
+### 测试结果
 
 - 交替显示load-balance1 load-balance2下的index.html
 - 可以设置权重，是否参与负载
