@@ -13,19 +13,22 @@ categories:
 #### docker 安装
 
 	$yum -y install docker #centos7下
-
+	mac 直接安装官方Docker.dmg
+	
+	
 #### docker command
 
 	$docker ps -a|-l #列出正在运行的容器，-a all  -l last
 	$docker run --ti --name containername image # -t terminal 挂起伪终端 -i 绑定io --name containername 
 	$docker images #列出所有镜像
-	$docker-enter contaniername| id # 进入正在运行的容器
+	$docker-enter contaniername| id # 进入正在运行的容器 需要安装docker-enter 和 nsenter
 	$docker kill containername|id #停止并删除容器
 	$docker stop containername | id 停止容器
 	$docker rm  containername|id #删除容器
 	$docker rmi containername|id #删除镜像
 	$docker commit -m 'comment' containername|id #容器生成镜像
 	$docker run --link  -v #容器间相互连接 挂载数据共享文件 宿主机 容器修改双方都生效
+	$docker exec -it containername|id /bin/bash #进入容器
 	
 <!--more-->
 #### 注解
