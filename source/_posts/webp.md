@@ -1,8 +1,9 @@
 ---
 title: webp
+categories: image
 date: 2017-03-18 18:58:08
-categories:	image
 ---
+
 
 ### webp简介
 google开发的一种新的web图片格式，在保证清晰度的前提下非常有效减少图片的大小，降低请求响应时间，减少带宽
