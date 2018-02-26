@@ -1,8 +1,9 @@
 ---
 title: phpunit
-date: 2017-12-08 11:21:02
 categories: php
+date: 2017-12-08 11:21:02
 ---
+
 
 # 安装
 
@@ -29,7 +30,27 @@ categories: php
 > 在测试类结束之后执行一次，用于释放数据库，删除测试数据等等
 
 # 桩
+> 待续
 
 # phpunit.xml 
+> 测试编排
 
+	<phpunit bootstrap="bootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnFailure="true">
+    <testsuites>
+        <testsuite name="dir">
+           <directory>path</directory>
+        </testsuite>
+    </testsuites>
+	</phpunit>
 # bootstrap
+
+> 执行测试文件之前加载的文件
+> 加载配置文件
+> 加载自动加载文件
+> ...
+> 通常修改自index文件
