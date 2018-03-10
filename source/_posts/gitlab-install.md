@@ -1,8 +1,9 @@
 ---
 title: gitlab-install
-date: 2017-03-18 18:06:04
 categories: gitlab
+date: 2017-03-18 18:06:04
 ---
+
 
 ### 环境
 > os : CentOS Linux release 7.2.1511 (Core)  
