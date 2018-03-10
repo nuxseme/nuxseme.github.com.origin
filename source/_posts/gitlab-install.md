@@ -7,17 +7,19 @@ date: 2017-03-18 18:06:04
 
 ### 环境
 > os : CentOS Linux release 7.2.1511 (Core)  
-> gitlab: 8.17.3  
+> gitlab: 10.5.4  
 > gitlab [down-page](https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/)
 
 ### 安装流程
 
 #### 下载文件
-	$ll
-	-rwxr-xr-x   1 root root 270885825 12月 22 21:47 gitlab-ce-8.17.3-ce.0.el7.x86_64.rpm
+	gitlab-ce-10.5.4-ce.0.el7.x86_64.rpm
+	
+#### 安装依赖
+	yum install -y curl openssh-server openssh-clients postfix cronie policycoreutils-python
 	
 #### rpm 安装
-	$rpm -ivh gitlab-ce-8.17.3-ce.0.el7.x86_64.rpm
+	$rpm -ivh gitlab-ce-10.5.4-ce.0.el7.x86_64.rpm
 	//通常gitlab将会安装到/opt/gitlab目录下
 	///var/log/gitlab  日志文件
 	///etc/gitlab/gitlab.rb 配置文件
@@ -39,6 +41,8 @@ date: 2017-03-18 18:06:04
 	
 ### gitlab-ctl command
 
+	$head -1 /opt/gitlab/version-manifest.txt
+	gitlab-ce 10.5.4
 	$gitlab-ctl help //帮助文档
 	$gitlab-ctl status //查看gitlab状态
 	$gitlab-ctl stop 
