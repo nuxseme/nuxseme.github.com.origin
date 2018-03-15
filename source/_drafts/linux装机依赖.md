@@ -6,7 +6,7 @@ categories:
 
 ### nginx 依赖
 ```
-yum -y install pcre-devel openssl openssl-devel gcc automake autoconf libtool make curl libcurl-devel
+yum -y install pcre-devel openssl openssl-devel gcc automake autoconf libtool make curl libcurl-devel expat-devel perl-ExtUtils-MakeMaker
 ```
 
 ### win上传下载
