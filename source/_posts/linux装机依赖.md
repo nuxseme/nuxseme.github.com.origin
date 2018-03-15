@@ -8,7 +8,7 @@ date: 2018-03-15 17:13:03
 
 ### nginx 依赖
 ```
-yum -y install pcre-devel openssl openssl-devel openssh-clients gcc automake autoconf libtool make curl libcurl-devel expat-devel perl-ExtUtils-MakeMaker gpm-libs
+yum -y install pcre-devel openssl openssl-devel openssh-clients openssh-server gcc automake autoconf libtool make curl libcurl-devel expat-devel perl-ExtUtils-MakeMaker gpm-libs
 ```
 
 ### win上传下载
