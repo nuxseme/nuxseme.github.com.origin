@@ -1,8 +1,7 @@
 ---
 title: mysql优化总结
-categories:
-  - null
-date:
+date: 2019-01-05 07:11:36
+categories: mysql
 ---
 
 
@@ -120,4 +119,26 @@ InnoDB 的count(*) 优化
 >不要用count(*) 做精确统计  全表扫描
 读取INFORMATION_SCHEMA tables的rows作非精确的统计
 建立二级索引 secondary index
+
+### 选着合适的字段类型
+
+	主键，int类型的   int(64) 4294967295  bigint
+	
+	字符串  varchar
+	
+	时间  datetime 不转化为UTC
+	      timestamp 会转为UTC
+	类型  tinyint 
+	长文本  longtext longblob 
+	
+	
+	基础字符指定成ascii 使用索引的效率会更高 ??
+
+### 索引
+
+	possible_key的选择
+	mysql => explain extend 
+	pg =>EXPLAIN ANALYSE
+	具体针对sql分析不要随便设定查询的值 这样在分析的时候选择的possible_key可能会有差异
+	虽然引用了索引 也可能查询的行数太多导致db的内存和cpu使用过高
 
