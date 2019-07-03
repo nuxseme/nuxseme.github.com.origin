@@ -1,8 +1,9 @@
 ---
-title: nginx-基础篇  
-date: 2019-07-02 16:42:48  
+title: nginx-基础篇
 categories: nginx
+date: 2019-07-02 16:42:48
 ---
+
 
 #### 优势
 
@@ -38,25 +39,28 @@ categories: nginx
 	http {
     ... ...        #后面再详细介绍 http 配置项目
     
-    server {
-        listen 80                          #监听端口;
-        server_name localhost              #地址
-        
-        location / {                       #访问首页路径
-            root /xxx/xxx/index.html       #默认目录
-            index index.html index.htm     #默认文件 
-        }        
-        
-        error_page  500 504   /50x.html    #当出现以上状态码时从新定义到50x.html        
-        location = /50x.html {             #当访问50x.html时
-            root /xxx/xxx/html             #50x.html 页面所在位置
-        }        
-    }
+	    server {
+	        listen 80                          #监听端口;
+	        server_name localhost              #地址
+	        
+	        #sever可以配置多个location
+	        location / {                       #访问首页路径
+	            root /xxx/xxx/index.html       #默认目录
+	            index index.html index.htm     #默认文件 
+	        }        
+	        
+	        error_page  500 504   /50x.html    #当出现以上状态码时从新定义到50x.html        
+	        location = /50x.html {             #当访问50x.html时
+	            root /xxx/xxx/html             #50x.html 页面所在位置
+	        }        
+	    }
     
-    server {
-        ... ... 
-    } 
+	    server {
+	        ... ... 
+	    } 
    	}
+   	
+   	#可以配置多个server
 
 
 
@@ -65,4 +69,8 @@ categories: nginx
 	    keepalive_timeout   65        #客户端服务端请求超时时间
 	    log_format  main   XXX        #定义日志格式 代号为main
 	    access_log  /usr/local/access.log  main     #日志保存地址 格式代码 main
+	    
+	    #'$request|$status|$request_time|$upstream_response_time';
+	    # request_time 指的就是从接受用户请求的第一个字节到发送完响应数据的时间，即包括接收请求数据时间、程序响应时间、输出响应数据时间  
+	    # upstream_response_time  是指从Nginx向后端（php-cgi)建立连接开始到接受完数据然后关闭连接为止的时间
 	}
