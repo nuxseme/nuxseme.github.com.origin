@@ -41,7 +41,7 @@ categories: nginx
 	}
 	
 	
-<--more-->
+<!--more-->
 #### HTTP服务器层
 
 ##### 网页内容的压缩编码与传输速度优化
