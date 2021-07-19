@@ -46,6 +46,6 @@ before_install:
    - chmod 600 ~/.ssh/id_rsa #如果命名为其他比如delpoy_rsa 有可能在ssh 阶段不会自动尝试该秘钥
 
 after_success:
-  - ssh ${USERNAME}@${SERVER_HOST} < deploy.sh #可以直接运行指令 也可以部署命令写入文件直接读取，通常就是进入项目目录Git pull
+  - ssh ${USERNAME}@${SERVER_HOST} < deploy.sh #可以直接运行指令 也可以部署命令写入文件直接读取，通常就是进入项目目录Git pull 服务用户名和地址需要在travis setting配置
 ```
 
