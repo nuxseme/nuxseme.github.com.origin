@@ -9,6 +9,8 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x]
+    env:
+      GH_REP: nuxseme.github.com
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -18,8 +20,7 @@ jobs:
           cache: 'npm'
       - name: build
         env:
-          GH_REP: nuxseme.github.com
-          GH_REF: github.com/nuxseme/$GH_REP.git
+          GH_REF: "github.com/nuxseme/${{env.GH_REP}}.git"
         run: |
           node -v
           npm install
@@ -29,7 +30,7 @@ jobs:
           hexo  g
           cd ./public
           ls  -al
-          curl -u nuxse:${{ secrets.ACCESS_TOKEN }} https://api.github.com/user/repos -d '{ "name": "nuxseme.github.com" }'
+          curl -u nuxse:${{ secrets.ACCESS_TOKEN }} https://api.github.com/user/repos -d '{ "name": "${{ env.GH_REP }}" }'
           git init
           git config --global user.name "nuxseme"
           git config --global user.email "nuxseme@gmail.com"
