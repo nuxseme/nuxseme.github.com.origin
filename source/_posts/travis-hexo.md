@@ -11,7 +11,7 @@ categories:
 
 ### travis-ci 
 
->免费开源，结合github非常方便。
+>免费开源，结合github非常方便。[travis-ci 需要收费，弃用，转用github actions]
 1 travis 会在收到你的push之后自动建立一个虚拟环境，执行.travis.yml指令
 2 你的github项目中包含正确配置的.travis.yml文件
 3 在travis.org中，将你的github项目同步过去，并开启配置
