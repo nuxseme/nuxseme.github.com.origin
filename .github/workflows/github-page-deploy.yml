@@ -1,0 +1,38 @@
+name: GitHub Pages Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: build
+        env:
+          GH_REP: nuxseme.github.com
+          GH_REF: github.com/nuxseme/$GH_REP.git
+        run: |
+          node -v
+          npm install -g n
+          npm install hexo-cli -g
+          hexo -v
+          hexo clean
+          hexo  g
+          cd ./public
+          ls  -al
+          curl -u nuxse:${{ secrets.ACCESS_TOKEN }} https://api.github.com/user/repos -d '{ "name": "nuxseme.github.com" }'
+          git init
+          git config --global user.name "nuxseme"
+          git config --global user.email "nuxseme@gmail.com"
+          git add .
+          git commit -m "Auto deploy from Githun Actions"
+          git push --force  "https://${{ secrets.ACCESS_TOKEN }}@$GH_REF" master:master
